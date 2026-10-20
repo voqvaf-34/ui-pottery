@@ -28,35 +28,35 @@
           <h3>Consultas e inscripciones</h3>
           <form id="contact-form">
             <div>
-              <label for="name">Nombre</label>
-              <input id="name" name="name" type="text" placeholder="Nombre" />
+              <label class="form-label" for="name">Nombre</label>
+              <input class="form-control" id="name" name="name" type="text" placeholder="Nombre" />
             </div>
             <div>
-              <label for="email">Correo electrónico</label>
-              <input id="email" name="email" type="email" placeholder="Correo electrónico" />
+              <label class="form-label" for="email">Correo electrónico</label>
+              <input class="form-control" id="email" name="email" type="email" placeholder="Correo electrónico" />
             </div>
             <div>
-              <label for="message">Consulta</label>
-              <textarea id="message" name="message" rows="3" placeholder="Tu consulta"></textarea>
+              <label class="form-label" for="message">Consulta</label>
+              <textarea class="form-control" id="message" name="message" rows="3" placeholder="Tu consulta"></textarea>
             </div>
             <fieldset>
               <legend>¿Ya asististe a uno de nuestros cursos?</legend>
-              <div>
-                <input type="radio" id="attended-yes" name="attended" value="yes" required />
+              <div class="form-field">
+                <input class="radio" type="radio" id="attended-yes" name="attended" value="yes" required />
                 <label for="attended-yes">Sí</label>
               </div>
-              <div>
-                <input type="radio" id="attended-no" name="attended" value="no" />
+              <div class="form-field">
+                <input class= "radio" type="radio" id="attended-no" name="attended" value="no" />
                 <label for="attended-no">No, sería mi primera vez</label>
               </div>
             </fieldset>
             <div>
               <label for="notifications">¿Te gustaría recibir notificaciones?</label>
-              <div>
+              <div class="switch">
                 <input type="checkbox" id="notifications" name="notifications" role="switch" switch />
               </div>
             </div>
-            <button type="submit">Enviar consulta</button>
+            <button class="btn-solid theme-primary" type="submit">Enviar consulta</button>
             <p id="status" role="status"></p>
           </form>
         </section>
